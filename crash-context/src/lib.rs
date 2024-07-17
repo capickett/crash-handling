@@ -23,6 +23,7 @@
 
 // crate-specific exceptions:
 #![allow(unsafe_code, nonstandard_style)]
+#![feature(naked_functions)]
 
 cfg_if::cfg_if! {
     if #[cfg(any(target_os = "linux", target_os = "android"))] {
